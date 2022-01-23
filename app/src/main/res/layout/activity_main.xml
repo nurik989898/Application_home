@@ -123,7 +123,6 @@
         android:layout_marginTop="10dp"/>
 
     <Button
-        android:enabled="false"
         android:id="@+id/voiti"
         android:layout_width="300dp"
         android:layout_height="50dp"
