@@ -31,7 +31,10 @@ public class MainActivity extends AppCompatActivity {
     button.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            if (!text.getText().toString().isEmpty() && !password.getText().toString().isEmpty()){
+            if (text.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
+               text.setVisibility(view.GONE);
+                password.setVisibility(view.GONE);
+                button.setVisibility(view.GONE);
                 Toast.makeText(MainActivity.this, "Добро пожалывать:)", Toast.LENGTH_SHORT).show();
             }else {
                 Toast.makeText(MainActivity.this, "Не правильный пароль или логин!!!", Toast.LENGTH_SHORT).show();
